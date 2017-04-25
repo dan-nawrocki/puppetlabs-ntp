@@ -68,8 +68,8 @@ class ntp (
   validate_re($keys_controlkey, ['^\d+$', ''])
   validate_re($keys_requestkey, ['^\d+$', ''])
   validate_array($keys_trusted)
-  if $minpoll { validate_numeric($minpoll, 16, 3) }
-  if $maxpoll { validate_numeric($maxpoll, 16, 3) }
+  if $minpoll { validate_numeric($minpoll, 17, 4) }
+  if $maxpoll { validate_numeric($maxpoll, 17, 4) }
   validate_string($package_ensure)
   validate_bool($package_manage)
   validate_array($package_name)
